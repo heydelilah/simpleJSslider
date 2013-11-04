@@ -1,0 +1,47 @@
+body{
+	font-family: Georgia;
+}
+
+#banner {
+	color: #333;
+	width: 600px;
+	font-size: 36px;
+	height: 170px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	background-color: #FFF;
+	margin: 30px;
+	border-radius: 15px;
+	box-shadow: 0px 5px 20px #BEBEBE;
+}
+#banner  ul{
+	list-style: none;
+	width: 10000px;
+	margin: 0;padding: 0;
+}
+#banner  ul li{
+	float: left;
+	width: 600px;
+	margin: 0;padding: 0;
+	line-height: 130px;
+}
+
+#slider-nav{
+	left: 50%;
+	bottom: 30px;
+	position: absolute;
+	overflow: hidden;
+	margin-left: -52px;
+}
+#slider-nav a{
+	float: left;
+	width: 12px;
+	height: 12px;
+	display: block;
+	margin: 0 7px;
+	background-color: #4d4d4d;
+}
+#slider-nav a:hover,#slider-nav .act{
+	background-color: #ec3e47;
+}
