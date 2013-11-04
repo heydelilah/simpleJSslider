@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Slider</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<body>
+	<div id="banner" class="slider">
+		<ul>
+			<li>
+				<div class="item" data-id="1">1 Hey there Delilah</div>
+			</li>
+			<li>
+				<div class="item" data-id="2">2 Born to Die</div>
+			</li>
+			<li>
+				<div class="item" data-id="3">3  Alright,Still</div>
+			</li>
+			<li>
+				<div class="item" data-id="4">	4 You Are EP</div>
+			</li>
+		</ul>
+
+		<div id="slider-nav">
+			<a data-id="1" class="act"></a>
+			<a data-id="2"></a>
+			<a data-id="3"></a>
+			<a data-id="4"></a>
+		</div>
+	</div>
+
+	<script src="libs/jquery-1.9.1.min.js"></script>
+	<script src="libs/slider.js"></script>
+	<script>
+		window.onload = function() {
+			var partner = $('#banner').children('ul'),
+				slider = new Slider( partner, $('#slider-nav') );
+
+
+			var id =setInterval(function(){
+				slider.show();
+			},1500);
+
+			$('#banner').hover(function(){
+				clearInterval(id);
+			});
+
+			$('#slider-nav a').click(function(ev){
+				slider.show($(this).attr('data-id'));
+			});
+		}
+	</script>
+</body>
+</body>
+</html>
