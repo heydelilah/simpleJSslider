@@ -5,7 +5,7 @@ function Slider( container, nav ) {
 	this.imgs = this.container.find('.item');
 	this.imgWidth = $(this.imgs[0]).width(); // 600
 	this.imgsLen = this.imgs.length;
-
+	// 计数器
 	this.count = 1;
 }
 
