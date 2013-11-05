@@ -37,14 +37,19 @@
 		window.onload = function() {
 			var partner = $('#banner').children('ul'),
 				slider = new Slider( partner, $('#slider-nav') );
+			var tag =true;
 
 
 			var id =setInterval(function(){
-				slider.show();
-			},1500);
+				if(tag){
+					slider.show();
+				}
+			},1000);
 
-			$('#banner').hover(function(){
-				clearInterval(id);
+			$('#banner').mouseenter(function(){
+				tag = false;
+			}).mouseleave(function(){
+				tag = true;
 			});
 
 			$('#slider-nav a').click(function(ev){
