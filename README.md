@@ -19,3 +19,4 @@ just a snippet about create a JS slider
 
 ### Other
 * 20131105
+* http://heydelilah.github.io/simpleJSslider
